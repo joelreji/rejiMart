@@ -29,7 +29,7 @@ function App() {
               <Card.Text className="pb-2" style={{ fontSize: '25px' }}>
                 AlgoMart is the idea that birthed Heimdall. Heimdall was built to serve the greater purpose of being the backbone of AlgoMart.
                 The goal of AlgoMart is to create a platform for the sale of incredible algorithms. Heimdall's machine learning models will
-                be the first to be integrated into AlgoMart. All algorithms on AlgoMart will be onboarded onto the <strong>Polygon Blockchain</strong> and the owner
+                be the first to be integrated into AlgoMart. All algorithms on AlgoMart will be onboarded onto the <strong><a href="https://polygon.technology/">Polygon Blockchain</a></strong> and the owner
                 will be able to utilize the algorithm for their specific needs. 
               </Card.Text>
             </Card.Body>
