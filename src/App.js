@@ -3,9 +3,6 @@ import './App.css';
 import { Button, Container, Nav, Row, Col, Card, Spinner } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
-
-
 function App() {
   return (
     <div className="App">
