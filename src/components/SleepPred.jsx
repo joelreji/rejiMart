@@ -133,7 +133,7 @@ const SleepPred = () => {
                         <Row className="pt-2">
                             <Col>
                                 <OverlayTrigger
-                                    placement="right"
+                                    placement="top"
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip("The number of hours you sleep per day.")}
                                 >
@@ -144,7 +144,7 @@ const SleepPred = () => {
                             </Col>
                             <Col>
                                 <OverlayTrigger
-                                    placement="right"
+                                    placement="top"
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip("The number of minutes you enage in physical activity daily.")}
                                 >
@@ -157,7 +157,7 @@ const SleepPred = () => {
                         <Row className="pt-2">
                             <Col>
                                 <OverlayTrigger
-                                    placement="right"
+                                    placement="top"
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip("A rating of your sleep quality ranging from 1(low) to 10(high)")}
                                 >
@@ -174,7 +174,7 @@ const SleepPred = () => {
                             </Col>
                             <Col>
                             <OverlayTrigger
-                                    placement="right"
+                                    placement="top"
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip("A rating of your stress level ranging from 1(low) to 10(high)")}
                                 >
@@ -193,7 +193,7 @@ const SleepPred = () => {
                         <Row className="pt-2">
                             <Col>
                             <OverlayTrigger
-                                    placement="right"
+                                    placement="top"
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip("Your resting heart rate measured in beats per minute.")}
                                 >
@@ -204,7 +204,7 @@ const SleepPred = () => {
                             </Col>
                             <Col>
                             <OverlayTrigger
-                                    placement="right"
+                                    placement="top"
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip("Average number of steps you take per day")}
                                 >
@@ -217,7 +217,7 @@ const SleepPred = () => {
                         <Row className="pt-2">
                             <Col>
                             <OverlayTrigger
-                                    placement="right"
+                                    placement="top"
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip("Your body mass index rating")}
                                 >
@@ -234,7 +234,7 @@ const SleepPred = () => {
                         <Row className="pt-2">
                             <Col>
                             <OverlayTrigger
-                                    placement="right"
+                                    placement="top"
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip("You systolic blood pressure; top number in your blood pressure")}
                                 >
@@ -245,7 +245,7 @@ const SleepPred = () => {
                             </Col>
                             <Col>
                             <OverlayTrigger
-                                    placement="right"
+                                    placement="top"
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip("You diastolic blood pressure; bottom number in your blood pressure")}
                                 >
