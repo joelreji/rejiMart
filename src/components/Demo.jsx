@@ -1,5 +1,5 @@
 import './Components.css';
-import { Container, Row, Col, Accordion } from "react-bootstrap"
+import { Container, Row, Col, Accordion, Alert} from "react-bootstrap"
 import SleepPred from './SleepPred';
 
 const Demo = () => {
@@ -31,6 +31,7 @@ const Demo = () => {
               </Accordion>
             </Col>
           </Row>
+          <Alert variant='light' style={{ fontSize: '10px' }}>These plugins are for demonstration purposes. All predictions are based on past data and could have inacuracies. Please consult a professional before making an decisions.</Alert>
         </Container>
       </div>
     </div>
