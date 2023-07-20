@@ -110,9 +110,9 @@ const SleepPred = () => {
         <Card className="border-0">
             <Card.Img variant="top" src="/insomnia.png" />
             <Card.Body>
-                <Card.Title className="fw-bold display-6 pb-3">Sleep Disorder Prediction</Card.Title>
+                <Card.Title className="fw-bold display-6 pb-4">Sleep Disorder Prediction</Card.Title>
                 <Card.Text>
-                    <p className="pb-3">Please fill out the below fields to check if you are at risk for a sleep disorder.</p>
+                    <p className="pb-3">Please fill out the below fields to check if you are at risk for a sleep disorder. <small>No data is collected, stored or sold.</small></p>
                     <Form>
                         <Row>
                             <Col>
