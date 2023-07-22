@@ -68,7 +68,7 @@ const SleepPred = () => {
 
     const predict = async (evt) => {
         evt.preventDefault();
-        const url = 'http://heimdall-1523192821.us-east-2.elb.amazonaws.com:8082/predict/';
+        const url = 'https://predict.heimdallapp.org/predict/';
 
         const headers = {
             'X-api-key': '8XXL1oIVivRjyGfqQEishNwKeY1srn6F',
