@@ -1,6 +1,7 @@
 import './Components.css';
 import { Container, Row, Col, Accordion, Alert} from "react-bootstrap"
 import SleepPred from './SleepPred';
+import SpotifyPop from './SpotifyPop';
 
 const Demo = () => {
 
@@ -21,11 +22,21 @@ const Demo = () => {
           </Row>
           <Row xs={1} md={2} className="g-4">
             <Col>
-              <Accordion defaultActiveKey="0" className="pb-5">
+              <Accordion className="pb-5">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>Are you at risk for a sleep disorder?</Accordion.Header>
                   <Accordion.Body>              
                     <SleepPred></SleepPred>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+            <Col>
+              <Accordion  className="pb-5">
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>How popular will your favorite song be?</Accordion.Header>
+                  <Accordion.Body>              
+                    <SpotifyPop></SpotifyPop>
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
