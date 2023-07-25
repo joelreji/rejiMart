@@ -152,7 +152,7 @@ const SpotifyPop = () => {
 
     return (
         <Card className="border-0">
-            <Card.Img variant="top" src="/spotify.png" />
+            <Card.Img variant="top" src="/Spotify_Icon_CMYK_Green.png" />
 
             <Card.Body>
                 <Card.Title className="fw-bold display-6 pb-4">Spotify Music Popularity</Card.Title>
