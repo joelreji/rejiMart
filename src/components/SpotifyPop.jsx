@@ -161,7 +161,7 @@ const SpotifyPop = () => {
                 <Card.Title className="fw-bold display-6 pb-4">Spotify Music Popularity</Card.Title>
                 <Card.Text>
                     <p className="pb-3">Drop in a spotify URL to see how popular a song is.
-                    This plugin was built to showcase that data doesn't have to be ingested through forms.
+                    This plugin was built to showcase that all datapoints dont' have to be ingested strictly through forms.
                     It can be ingested in different ways like making API calls to other services gather data. </p>
                     <p className="text-danger">This is a low accuracy model only meant to illustrate automated data pipelines using external APIs.</p>
                     <Form>
