@@ -91,8 +91,6 @@ const SpotifyPop = () => {
             const accessToken = tokenResponse.data.access_token;
             const trackData = await getSpotifyTrackData(accessToken, trackId);
             const audioData = await getSpotifyAudioAnalysis(accessToken, trackId);
-            console.log(trackData)
-            console.log(audioData)
 
             const endpoint = 'https://predict.heimdallapp.org/predict/';
             const headers = {
@@ -154,9 +152,8 @@ const SpotifyPop = () => {
 
     return (
         <Card className="border-0">
-            <Card.Body style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Card.Img variant="top" src="/spotify.png" style={{ width: '340px', height: '340px' }} />
-            </Card.Body>
+            <Card.Img variant="top" src="/spotify.png" />
+
             <Card.Body>
                 <Card.Title className="fw-bold display-6 pb-4">Spotify Music Popularity</Card.Title>
                 <Card.Text>
