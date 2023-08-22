@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import './Components.css';
 import { Container, Row, Col, Card, FloatingLabel, Form, Tooltip, OverlayTrigger, Button, Modal } from "react-bootstrap"
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
 import axios from 'axios';
 
 const Trophy = () => {
 
-    const [selectedDate, setSelectedDate] = useState(null);
     const [daysBeforeToday, setDaysBeforeToday] = useState(0);
     const [lastVisitCategory, setLastVisitCategory] = useState(null);
     const [visits, setVisits] = useState(0);
@@ -20,25 +17,27 @@ const Trophy = () => {
     const [showModal, setShowModal] = useState(false);
 
 
-
+    const selectDaysBefore = (event) => {
+        setDaysBeforeToday(parseInt(event.target.value)); 
+    }
     const selectVisitCategory = (event) => {
         setLastVisitCategory(event.target.value)
     }
 
     const selectVisits = (event) => {
-        setVisits(event.target.value)
+        setVisits(parseInt(event.target.value))
     }
 
     const selectCovers = (event) => {
-        setCovers(event.target.value)
+        setCovers(parseInt(event.target.value))
     }
 
     const selectLifeVisits = (event) => {
-        setLifeVisits(event.target.value)
+        setLifeVisits(parseInt(event.target.value))
     }
 
     const selectLifeCovers = (event) => {
-        setLifeCovers(event.target.value)
+        setLifeCovers(parseInt(event.target.value))
     }
 
     const selectGuestTag = (event) => {
@@ -46,7 +45,7 @@ const Trophy = () => {
     }
 
     const selectLifeSpend = (event) => {
-        setLifeSpend(event.target.value)
+        setLifeSpend(parseFloat(event.target.value))
     }
 
     const handleCloseModal = () => {
@@ -63,19 +62,6 @@ const Trophy = () => {
         </Tooltip>
     );
 
-    const handleDateChange = (date) => {
-        setSelectedDate(date);
-
-        // Calculate the number of days before today
-        if (date) {
-            const today = new Date();
-            const differenceInTime = today.getTime() - date.getTime();
-            const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24));
-            setDaysBeforeToday(differenceInDays);
-        } else {
-            setDaysBeforeToday(0);
-        }
-    };
 
     const predict = async (evt) => {
         evt.preventDefault();
@@ -137,19 +123,15 @@ const Trophy = () => {
                     <Card.Body>
                         <p className="py-4">Get the customer total spend prediction based on their previous open table details.</p>
                         <Row className="py-2">
-                            <Col>
+                        <Col>
                                 <OverlayTrigger
                                     placement="top"
                                     delay={{ show: 250, hide: 400 }}
-                                    overlay={renderTooltip("The date of the last visit")}
+                                    overlay={renderTooltip("Days since the last visit")}
                                 >
-                                    <DatePicker
-                                        selected={selectedDate}
-                                        onChange={handleDateChange}
-                                        dateFormat="yyyy-MM-dd"
-                                        placeholderText="Last Visit Date"
-                                        className="form-control"
-                                    />
+                                    <FloatingLabel controlId="floatingInput" label="Days Since Visit">
+                                        <Form.Control type="number" placeholder="daysVisit" onChange={selectDaysBefore} />
+                                    </FloatingLabel>
                                 </OverlayTrigger>
                             </Col>
                             <Col>
