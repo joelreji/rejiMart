@@ -9,7 +9,7 @@ const pos = () => {
         <div>
             <Container>
                 <Card className="border-0 pt-2 pb-5 text-center">
-                    <Card.Header className="bg-white border-0 display-6 fw-bold">Market pricing for high foot traffic stores</Card.Header>
+                    <Card.Header className=" bg-white border-0 display-6 fw-bold">Market pricing for high foot traffic stores</Card.Header>
                 </Card>
                 <p>
                     Recently, I was at a football game with some friends and we were all in line to purchase some beers before the game started.
